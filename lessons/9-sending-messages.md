@@ -15,7 +15,7 @@ const sendMessage = React.useCallback(async () => {
 
   // clear the input
   setText('');
-}, []);
+}, [text]);
 ```
 
 This function looks slightly different that our other methods because of the `async` keyword that precedes the arrow function. In the middle of the function, you see another keyword `await`. These are part of the ES7 `async/await` feature, which makes it easier to deal with asynchronous code where you would normally have used Promises. For the purposes of this tutorial, going deeper into async/await is not important, but they are very useful and worth [learning more about](https://ponyfoo.com/articles/understanding-javascript-async-await).

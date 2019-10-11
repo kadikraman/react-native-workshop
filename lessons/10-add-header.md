@@ -46,13 +46,10 @@ import Header from './Header';
 Then you can just drop in the Header component above the `SafeAreaView` and pass the channel name as the `title` prop. You should now see a Header on the screen!
 ```diff
     return (
-+     <>
-+       <Header title={CHANNEL} />
-        <SafeAreaView style={styles.container}>
+      <SafeAreaView style={styles.container}>
+        <Header title={CHANNEL} />
       // rest of code
-+     <>
 ```
-Note about `<></>` - in React (and subsequently React Native), every component must be wrapped in a single JSX element. If we want to return one or more adjacent element, we can wrap them in Fragments. `<>` is simply a shorthand for `<Fragment>`.
 
 Speaking of [Props](https://facebook.github.io/react-native/docs/props.html), we briefly touched on them earlier, but this is the first time we are using them in our own components.
 
