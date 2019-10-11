@@ -17,13 +17,11 @@ Work the tutorial at your own pace. The instructions below assume that you are c
 9. [Sending messages](./lessons/9-sending-messages.md)
 10. [Add a header](./lessons/10-add-header.md)
 11. [Avatars](./lessons/11-avatars.md)
-
-That's it for the main part of the tutorial! If you've sped through all these, here are some stretch goals:
-12. [Components](./lessons/12-components.md)
-13. [Navigation](./lessons/13-navigation.md)
-14. [Switch between channels](./lessons/14-switch-channels.md)
-15. [Edit name and avatar](./lessons/15-edit-name.md)
-16. [Publish](./lessons/16-publish.md)
+12. [Components](./lessons/12-components.md) (stretch goal)
+13. [Navigation](./lessons/13-navigation.md) (stretch goal)
+14. [Switch between channels](./lessons/14-switch-channels.md) (stretch goal)
+15. [Edit name and avatar](./lessons/15-edit-name.md) (stretch goal)
+16. [Publish](./lessons/16-publish.md) (stretch goal)
 
 ## Resources
 - [React Native docs](https://facebook.github.io/react-native/)
@@ -49,3 +47,6 @@ That's it for the main part of the tutorial! If you've sped through all these, h
   - [Detox (end to end testing)](https://github.com/wix/Detox)
 - AR / VR
   [Viro](https://viromedia.com/viroreact)
+
+
+This workshop is the React 16.8 (hooks) version of [React Native Chat Tutorial](https://github.com/jevakallio/react-native-chat-tutorial).

@@ -50,28 +50,30 @@ export default function App() {
   }, [text]);
 
   return (
-    <SafeAreaView style={styles.container}>
+    <>
       <Header title={CHANNEL} />
-      <FlatList
-        data={messages}
-        renderItem={renderItem}
-        inverted
-      />
-      <KeyboardAvoidingView behavior='padding'>
-        <View style={styles.footer}>
-          <TextInput
-            value={text}
-            onChangeText={setText}
-            style={styles.input}
-            underlineColorAndroid='transparent'
-            placeholder='Type something nice'
-          />
-        </View>
-        </KeyboardAvoidingView>
-      <TouchableOpacity onPress={sendMessage}>
-        <Text style={styles.send}>Send</Text>
-      </TouchableOpacity>
-    </SafeAreaView>
+      <SafeAreaView style={styles.container}>
+        <FlatList
+          data={messages}
+          renderItem={renderItem}
+          inverted
+        />
+        <KeyboardAvoidingView behavior='padding'>
+          <View style={styles.footer}>
+            <TextInput
+              value={text}
+              onChangeText={setText}
+              style={styles.input}
+              underlineColorAndroid='transparent'
+              placeholder='Type something nice'
+            />
+          </View>
+          </KeyboardAvoidingView>
+        <TouchableOpacity onPress={sendMessage}>
+          <Text style={styles.send}>Send</Text>
+        </TouchableOpacity>
+      </SafeAreaView>
+    </>
   );
 }
 

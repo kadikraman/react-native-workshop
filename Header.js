@@ -14,7 +14,8 @@ const styles = StyleSheet.create({
     height: 80,
     backgroundColor: 'teal',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'flex-end',
+    padding: 10,
   },
   title: {
     color: 'white',
