@@ -1,6 +1,6 @@
 # Connect to the chat server
 
-First, let's all connect to a shared chat server. Our chat server is hosted in Firebase, so let's go ahead and install Firebase to our project:
+First, let's all connect to a shared chat server. Our chat server is hosted in Firebase, so let's go ahead and install Firebase npm module in our project:
 
 ```
 npm install firebase
@@ -17,4 +17,4 @@ const NAME = 'Your Name';
 const CHANNEL = 'hackconf';
 ```
 
-Replace "Your name" with ... well, your name! The channel can be any alphanumeric string - feel free to set up your own secret channel or use the default "hackconf" to participate with everyone else. You'll now have access to two functions, `send` and `subscribe` that we'll use to send and receive messages.
+Replace "Your name" with you own name. The channel can be any alphanumeric string - feel free to set up your own secret channel or use the default "hackconf" to participate with everyone else. You'll now have access to two functions, `send` and `subscribe` that we'll use to send and receive messages.

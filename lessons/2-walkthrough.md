@@ -6,9 +6,6 @@ Open the directory in your favorite IDE or text editor: [Atom](https://atom.io/)
 
 Open the **App.js** file. This is where we will do most of our coding today. It should look something like this.
 
-<details>
-  <summary>App.js (Click to expand)</summary>
-
 ```js
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
@@ -30,7 +27,6 @@ const styles = StyleSheet.create({
   },
 });
 ```
-</details>
 
 
 Looking at the file, you can see three main sections.

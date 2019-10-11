@@ -13,6 +13,8 @@ Before we render the TextInput, we'll need a place to keep track of the text the
 const [text, setText] = React.useState("");
 ```
 
+Notice that this is really similar to the `useState` hook we used before to store our messages. The only real difference being that we pass in an empty string as the initial value, instead of an empty array.
+
 Now we can add our TextInput to our UI. Add the following lines immediately after the `<FlatList ... />` component, but before the closing container `</View>`
 ```js
 <View style={styles.footer}>
@@ -26,7 +28,12 @@ Now we can add our TextInput to our UI. Add the following lines immediately afte
 </View>
 ```
 
-// TODO - explain
+Again, there's a lot to unpack here. One by one:
+
+1. First we declare a footer view. We'll need this so we can later position the send button next to the input, within the footer.
+2. Then we declare the TextInput. The first prop, value, sets the current value of the input. This is "bound" to the text state variable: when text is updated, the TextInput value updates.
+3. This update is done in the TextInput's onChangeText callback: When the input text is changed by the user, we replace the text state variable with the new text in order to update the input value. This pattern of listening of change events and then feeding the same value back to the component is called "Controlled component" - read about Handling text input in React Native to learn more.
+4. The rest of the TextInput props are presentational. There are many more props we could give here to control properties like on-screen keyboard type, autocorrect, autofocus etc.
 
 We don't yet see much on the screen. That is because the text input needs styling and dimensions. Add the missing `footer` and `input` style declarations into the StyleSheet at the bottom of the file:
 ```js

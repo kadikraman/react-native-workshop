@@ -29,7 +29,9 @@ We pass FlatList attributes, or [Props](https://facebook.github.io/react-native/
 2. `renderItem={renderItem}` - FlatList also needs a callback it can call for each item in the `data` array to render the corresponding row. Here we pass it a method `renderItem`.
 3. `inverted` - This prop will render the list in reverse order, so that latest messages are always anchored to the bottom of the list.
 
-The renderItem method isn't one of the special lifecycle methods - it's just a plain old method on the class. In fact, it doesn't even exist yet, so let's create it now. Place the renderItem method immediately *above* your the App function:
+The `rendeItem` function is a plain old function that takes the item data and renders it. This could be done inline, but it is generally good practice to break the `renderItem` function out of the JSX, because React Native can then do some performance optimisations behind the scenes. This won't be possible with an anonymous function.
+
+Place the renderItem method immediately *above* the App function:
 
 ```js
   const renderItem = ({ item }) => {

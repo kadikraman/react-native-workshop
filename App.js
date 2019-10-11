@@ -105,7 +105,7 @@ const styles = StyleSheet.create({
   },
   send: {
     alignSelf: 'center',
-    color: 'lightseagreen',
+    color: 'teal',
     fontSize: 16,
     fontWeight: 'bold',
     padding: 20,

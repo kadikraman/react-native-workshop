@@ -16,11 +16,14 @@ Work the tutorial at your own pace. The instructions below assume that you are c
 8. [Typing messages](./lessons/8-typing-messages.md)
 9. [Sending messages](./lessons/9-sending-messages.md)
 10. [Add a header](./lessons/10-add-header.md)
+11. [Avatars](./lessons/11-avatars.md)
 
 That's it for the main part of the tutorial! If you've sped through all these, here are some stretch goals:
-
-11. Avatars [Go!](./lessons/11-avatars.md)
-
+12. [Components](./lessons/12-components.md)
+13. [Navigation](./lessons/13-navigation.md)
+14. [Switch between channels](./lessons/14-switch-channels.md)
+15. [Edit name and avatar](./lessons/15-edit-name.md)
+16. [Publish](./lessons/16-publish.md)
 
 ## Resources
 - [React Native docs](https://facebook.github.io/react-native/)
@@ -30,3 +33,19 @@ That's it for the main part of the tutorial! If you've sped through all these, h
 - [React docs](https://reactjs.org/docs/hello-world.html)
 - [Expo docs](https://docs.expo.io/versions/latest/)
 - [Awesome React Native](https://github.com/jondot/awesome-react-native) - More resources than you will ever have time to read!
+
+## What next?
+- Navigation
+  - [React Navigation](https://reactnavigation.org/docs/en/getting-started.html)
+  - [React Native Navigation](https://github.com/wix/react-native-navigation)
+- [Other Built in Components](https://facebook.github.io/react-native/docs/components-and-apis)
+- [Animations](https://facebook.github.io/react-native/docs/0.60/animations)
+- [React Native without Expo](https://facebook.github.io/react-native/docs/getting-started)
+- Native Modules
+  - [iOS](https://facebook.github.io/react-native/docs/native-modules-android)
+  - [Android](https://facebook.github.io/react-native/docs/native-modules-ios)
+- Testing
+  - [React Native Testing Library (unit testing)](https://github.com/callstack/react-native-testing-library)
+  - [Detox (end to end testing)](https://github.com/wix/Detox)
+- AR / VR
+  [Viro](https://viromedia.com/viroreact)

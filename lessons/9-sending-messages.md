@@ -1,6 +1,6 @@
 # Sending messages
 
-Now that we can collect user input, we'll want to send it to our server. Let's declare a `sendMessage` method on our component, for example below the `componentDidMount` function we used when subscribing to messages:
+Now that we can collect user input, we'll want to send it to our server. Let's declare a `sendMessage` method on our component, for example below the `useEffect` hook we used when subscribing to messages:
 
 ```js
 const sendMessage = React.useCallback(async () => {
@@ -13,12 +13,12 @@ const sendMessage = React.useCallback(async () => {
     message: text,
   });
 
-  // clear the inpur
+  // clear the input
   setText('');
 }, []);
 ```
 
-This function looks slightly different that our other methods because of the `async` keyword that precedes the method name. In the middle of the function, you see another keyword `await`. These are part of the ES7 `async/await` feature, which makes it easier to deal with asynchronous code where you would normally have used Promises. For the purposes of this tutorial, going deeper into async/await is not important, but they are very useful and worth [learning more about](https://ponyfoo.com/articles/understanding-javascript-async-await).
+This function looks slightly different that our other methods because of the `async` keyword that precedes the arrow function. In the middle of the function, you see another keyword `await`. These are part of the ES7 `async/await` feature, which makes it easier to deal with asynchronous code where you would normally have used Promises. For the purposes of this tutorial, going deeper into async/await is not important, but they are very useful and worth [learning more about](https://ponyfoo.com/articles/understanding-javascript-async-await).
 
 We then need a Send button to call our `sendMessage` method. Let's start (you know the drill by now) by importing one more primitive from react-native, this time `TouchableOpacity`:
 
@@ -41,7 +41,7 @@ And of course, we'll style the button by adding a "send" style key to the StyleS
 ```js
   send: {
     alignSelf: 'center',
-    color: 'lightseagreen',
+    color: 'teal',
     fontSize: 16,
     fontWeight: 'bold',
     padding: 20,
