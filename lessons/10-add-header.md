@@ -43,7 +43,7 @@ Because we `export` the Header component, it means we can `import` it in our mai
 import Header from './Header';
 ```
 
-Then you can just drop in the Header component above the `SafeAreaView` and pass the channel name as the `title` prop. You should now see a Header on the screen!
+Then you can just drop in the Header component inside the `SafeAreaView`, just below the opening tag, and pass the channel name as the `title` prop. You should now see a Header on the screen!
 ```diff
     return (
       <SafeAreaView style={styles.container}>
